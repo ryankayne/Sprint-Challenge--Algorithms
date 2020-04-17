@@ -10,7 +10,12 @@ a)  a = 0
     while (a < n * n * n):
       a = a + n * n
 ```
+Time: O(n)
+Space: O(1)
 
+As n increases, the amount of time to do operations also increase, but by a steady amount. For every 1 integer you increase, the steps involved increase by 2. That's linear.
+
+And space is constant because there is no increase in space depending on how big the number is, it just uses one slot of memory.
 
 ```
 b)  sum = 0
