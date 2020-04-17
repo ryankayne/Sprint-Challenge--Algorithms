@@ -6,15 +6,16 @@ Your function must utilize recursion. It cannot contain any loops.
 def count_th(word):
     count = 0
     sub = "th"
+    
     if word.find(sub) != -1:
-        return count + 1
-        return count_th(word)
+        count += 1
+        return 1 + count_th(word[0:len(word) -1])
     else:
         return count
 
-print(count_th("th"))
+print(count_th("thingth"))
 
-
+# new_str = test_str.replace('e', '') 
 
 # def count_th(word):
 #     count = 0
