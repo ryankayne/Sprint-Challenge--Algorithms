@@ -25,6 +25,11 @@ b)  sum = 0
         j *= 2
         sum += 1
 ```
+Time: O(n^2)
+Space: O(1)
+
+As n increases, the time for operations also increases, but not in a consistent fashion. Regardless, time is increasing the time needed to process in an exponential fashion in relation to n, not to the previous time which I was at first thinking. The space is constant though, since every iteration takes up the same amount of space for variables i, sum, j, and n.
+
 
 ```
 c)  def bunnyEars(bunnies):
@@ -33,6 +38,10 @@ c)  def bunnyEars(bunnies):
 
       return 2 + bunnyEars(bunnies-1)
 ```
+Time: O(n)
+Space: O(n)
+
+As n increases, the time increase in a linear fashion. As n increases by an integer, an additional 4 steps are added to the process. In terms of space, the stack grows at a consistent rate during calculations as n increases so that relationship is also linear.
 
 ## Exercise II
 
